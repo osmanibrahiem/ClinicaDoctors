@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-1dp"
+    android:background="@drawable/cell_shape"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/working"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="@dimen/home_menu_item_marginStartEnd"
+        android:paddingTop="@dimen/search_MarginTop"
+        android:paddingEnd="@dimen/home_menu_item_marginStartEnd"
+        android:paddingBottom="@dimen/search_MarginTop"
+        android:textColor="@color/text_dec"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/home_menu_item_marginStartEnd"
+        android:paddingEnd="@dimen/home_menu_item_marginStartEnd">
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="?attr/editTextBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="@color/text_dec"
+            android:textSize="@dimen/font_size_large"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dil"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dil"
+            android:textColor="@color/text_dec"
+            android:textSize="@dimen/font_size_large"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="?attr/editTextBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:textColor="@color/text_dec"
+            android:textSize="@dimen/font_size_large"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/duration"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:entries="@array/examination_duration"
+            android:theme="@style/Spinner.WorkingHours"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/home_menu_item_marginStartEnd"
+        android:paddingEnd="@dimen/home_menu_item_marginStartEnd"
+        android:text="@string/gender_error"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/font_size_med"
+        android:visibility="gone" />
+</LinearLayout>

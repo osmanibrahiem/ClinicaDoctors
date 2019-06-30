@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Auth.DoctorProfile.ProfileActivity">
+
+    <include layout="@layout/app_bar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/logo_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/logo_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <RelativeLayout
+                android:id="@+id/image_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/home_menu_item_marginTop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/logo_end"
+                app:layout_constraintStart_toStartOf="@id/logo_start"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/input_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_picture_blank_square"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="2dp" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_plus"
+                    android:layout_width="@dimen/d32"
+                    android:layout_height="@dimen/d32"
+                    android:layout_alignBottom="@id/input_img"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/white"
+                    app:civ_background_color="@color/colorPrimary"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="1"
+                    app:srcCompat="@drawable/ic_plus" />
+            </RelativeLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/basic_information_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_MarginStartEnd"
+                android:layout_marginTop="@dimen/home_menu_item_marginTop"
+                android:layout_marginEnd="@dimen/search_MarginStartEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_container">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@color/home_news_border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="5dip"
+                    app:riv_mutate_background="true" />
+
+                <TextView
+                    android:id="@+id/basic_information_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradiant_button"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/search_MarginStartEnd"
+                    android:paddingEnd="@dimen/search_MarginStartEnd"
+                    android:text="@string/basic_information"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d5"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/basic_information_title">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_name_ar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/name_ar_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/name_icon"
+                            android:drawablePadding="@dimen/d5"
+                            android:drawableTint="@color/text_dec"
+                            android:hint="@string/name_ar"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_name_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/name_en_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/name_icon"
+                            android:drawablePadding="@dimen/d5"
+                            android:drawableTint="@color/text_dec"
+                            android:hint="@string/name_en"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/birthday_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_birthdate_signup"
+                            android:drawablePadding="@dimen/d5"
+                            android:drawableTint="@color/text_dec"
+                            android:hint="@string/birthday"
+                            android:imeOptions="actionDone"
+                            android:inputType="date"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/input_gender"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Spinner.Profile" />
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/license_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/search_MarginTop"
+                        android:layout_marginEnd="@dimen/search_MarginTop"
+                        android:layout_marginBottom="@dimen/search_MarginTop"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/license_img"
+                            android:layout_width="@dimen/d66"
+                            android:layout_height="@dimen/d66"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder"
+                            app:layout_constraintBottom_toBottomOf="@id/license_text"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toStartOf="@id/license_text"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/license_text" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/license_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/d5"
+                            android:paddingStart="@dimen/d6"
+                            android:paddingEnd="@dimen/d6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/license_img"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:imeOptions="actionNone"
+                                android:inputType="none"
+                                android:text="@string/LicenseId_title"
+                                android:textColor="@color/text_dec"
+                                android:textCursorDrawable="@null"
+                                android:textSize="@dimen/font_size_large" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/professional_title_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_MarginStartEnd"
+                android:layout_marginTop="@dimen/home_menu_item_marginTop"
+                android:layout_marginEnd="@dimen/search_MarginStartEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/basic_information_section">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@color/home_news_border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="5dip"
+                    app:riv_mutate_background="true" />
+
+                <TextView
+                    android:id="@+id/professional_title_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradiant_button"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/search_MarginStartEnd"
+                    android:paddingEnd="@dimen/search_MarginStartEnd"
+                    android:text="@string/professional_title"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d5"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/professional_title_title">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_professional_title_ar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/professional_title_ar_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/professional_title_in_arabic"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_professional_title_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/professional_title_en_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/professional_title_in_english"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/about_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_MarginStartEnd"
+                android:layout_marginTop="@dimen/home_menu_item_marginTop"
+                android:layout_marginEnd="@dimen/search_MarginStartEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/professional_title_section">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@color/home_news_border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="5dip"
+                    app:riv_mutate_background="true" />
+
+                <TextView
+                    android:id="@+id/about_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradiant_button"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/search_MarginStartEnd"
+                    android:paddingEnd="@dimen/search_MarginStartEnd"
+                    android:text="@string/about_the_doctor"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d5"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/about_title">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_about_ar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/about_ar_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/about_in_arabic"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_about_en"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/about_en_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/about_in_english"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPersonName"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/specialty_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/search_MarginStartEnd"
+                android:layout_marginTop="@dimen/home_menu_item_marginTop"
+                android:layout_marginEnd="@dimen/search_MarginStartEnd"
+                android:layout_marginBottom="@dimen/search_MarginStartEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/about_section">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@color/home_news_border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="5dip"
+                    app:riv_mutate_background="true" />
+
+                <TextView
+                    android:id="@+id/specialty_title"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradiant_button"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/search_MarginStartEnd"
+                    android:paddingEnd="@dimen/search_MarginStartEnd"
+                    android:text="@string/medical_specialty"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d5"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/specialty_title">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_specialty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/specialty_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/specialty"
+                            android:drawablePadding="@dimen/d5"
+                            android:drawableTint="@color/text_dec"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:hint="@string/specialty"
+                            android:imeOptions="actionNone"
+                            android:inputType="none"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/font_size_large" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/certificate_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/search_MarginTop"
+                        android:layout_marginEnd="@dimen/search_MarginTop"
+                        android:layout_marginBottom="@dimen/search_MarginTop"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:id="@+id/certificate_img"
+                            android:layout_width="@dimen/d66"
+                            android:layout_height="@dimen/d66"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder"
+                            app:layout_constraintBottom_toBottomOf="@id/certificate_text"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toStartOf="@id/certificate_text"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/certificate_text" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/certificate_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/d5"
+                            android:paddingStart="@dimen/d6"
+                            android:paddingEnd="@dimen/d6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/certificate_img"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:clickable="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:imeOptions="actionNone"
+                                android:inputType="none"
+                                android:text="@string/certificate_photo"
+                                android:textColor="@color/text_dec"
+                                android:textCursorDrawable="@null"
+                                android:textSize="@dimen/font_size_large" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/error_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <ImageView
+            android:id="@+id/error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_menu_item_marginTop"
+            android:textColor="@color/text_dec"
+            android:textSize="@dimen/font_size_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/error_img" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

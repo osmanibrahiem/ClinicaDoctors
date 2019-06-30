@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d16"
+    android:layout_marginTop="@dimen/d5"
+    android:layout_marginEnd="@dimen/d16"
+    android:layout_marginBottom="@dimen/d5">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@color/home_news_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="5dip"
+        app:riv_mutate_background="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/d14"
+        android:paddingTop="@dimen/d8"
+        android:paddingEnd="@dimen/d14"
+        android:paddingBottom="@dimen/d8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/day_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_dec"
+            android:textSize="@dimen/font_size_large"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/sw_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/appointments_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/booking_count"
+                android:textColor="@color/text_dec"
+                android:textSize="@dimen/font_size_large" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/day_sw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/loading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="LineSpinFadeLoaderIndicator" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

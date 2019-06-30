@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d16"
+    android:layout_marginEnd="@dimen/d16"
+    android:layout_marginBottom="@dimen/d5"
+    android:layout_marginTop="@dimen/d5"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@color/home_news_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="5dip"
+        app:riv_mutate_background="true" />
+
+    <TextView
+        android:id="@+id/question_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/d1"
+        android:paddingStart="@dimen/d14"
+        android:paddingEnd="@dimen/d14"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/d14"
+        android:paddingEnd="@dimen/d14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/question_title"
+        app:layout_constraintStart_toStartOf="@id/question_title"
+        app:layout_constraintTop_toBottomOf="@id/question_title">
+
+        <TextView
+            android:id="@+id/answer_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingStart="@dimen/d16"
+            android:paddingEnd="@dimen/d16"
+            android:textSize="@dimen/home_item_text_size" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

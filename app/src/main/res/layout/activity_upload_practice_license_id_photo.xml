@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Auth.UploadPracticeLicenseIdPhotoActivity">
+
+    <include layout="@layout/app_bar_layout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/upload_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d10"
+            android:layout_marginTop="@dimen/d5"
+            android:background="@drawable/gradiant_button"
+            android:enabled="false"
+            android:onClick="uploadLicense"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/hint_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d20"
+            android:background="@drawable/rectangle_message"
+            android:gravity="center"
+            android:padding="@dimen/d5"
+            android:text="@string/license_hint"
+            android:textSize="@dimen/title_text_size"
+            app:layout_constraintBottom_toTopOf="@id/upload_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/license_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="pickLicense"
+            android:src="@drawable/license_placeholder"
+            app:layout_constraintBottom_toTopOf="@id/hint_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

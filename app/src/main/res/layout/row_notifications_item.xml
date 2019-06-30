@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d16"
+    android:layout_marginTop="@dimen/d5"
+    android:layout_marginEnd="@dimen/d16"
+    android:layout_marginBottom="@dimen/d5">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@color/home_news_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/home_logo_image_padding"
+        android:layout_height="@dimen/home_logo_image_padding"
+        android:layout_marginStart="@dimen/search_MarginTop"
+        android:layout_marginTop="@dimen/search_MarginTop"
+        app:civ_background_color="@color/colorPrimaryDark"
+        app:civ_border="false"
+        app:civ_shadow="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_MarginTop"
+        android:layout_marginTop="@dimen/d5"
+        android:layout_marginEnd="@dimen/search_MarginTop"
+        android:gravity="center_vertical|start"
+        android:minHeight="@dimen/d1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintTop_toTopOf="@id/img" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/search_MarginTop"
+        android:gravity="center_vertical|end"
+        android:minHeight="@dimen/d1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_med"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+</android.support.constraint.ConstraintLayout>

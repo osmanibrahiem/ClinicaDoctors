@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d20"
+    android:layout_marginTop="@dimen/d5"
+    android:layout_marginEnd="@dimen/d20"
+    android:layout_marginBottom="@dimen/d5">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@color/home_news_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="5dip"
+        app:riv_mutate_background="true" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_patient"
+        android:layout_width="@dimen/d75"
+        android:layout_height="@dimen/d75"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_marginTop="@dimen/d10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_picture_blank_square"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_marginEnd="@dimen/d10"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_size_xlarge"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_patient"
+        app:layout_constraintTop_toTopOf="@id/img_patient" />
+
+    <TextView
+        android:id="@+id/booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_dec"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintStart_toStartOf="@id/patient_name"
+        app:layout_constraintTop_toBottomOf="@id/patient_name" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/check_in_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d10"
+        android:layout_marginBottom="@dimen/d10"
+        android:background="@drawable/gradiant_button"
+        android:enabled="false"
+        android:minWidth="@dimen/d4"
+        android:minHeight="@dimen/d4"
+        android:paddingStart="@dimen/d20"
+        android:paddingTop="@dimen/d2"
+        android:paddingEnd="@dimen/d20"
+        android:paddingBottom="@dimen/d2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/booking_date" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_button"
+        android:minWidth="@dimen/d4"
+        android:minHeight="@dimen/d4"
+        android:paddingStart="@dimen/d20"
+        android:paddingTop="@dimen/d2"
+        android:paddingEnd="@dimen/d20"
+        android:paddingBottom="@dimen/d2"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_size_large"
+        app:layout_constraintBottom_toBottomOf="@id/check_in_btn"
+        app:layout_constraintEnd_toStartOf="@id/check_in_btn"
+        app:layout_constraintTop_toTopOf="@id/check_in_btn" />
+
+</android.support.constraint.ConstraintLayout>

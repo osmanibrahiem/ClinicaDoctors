@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">Clinica Doctors</string>
+    <string name="facebook_app_id" translatable="false">2377149485902357</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2377149485902357</string>
+
+    <string name="jsut_now">Just Now</string>
+    <string name="_1_minute_ago">1 minute ago</string>
+    <string name="_2_minute_ago">2 minutes ago</string>
+    <string name="_3__10_minute_ago">%1$d minutes ago</string>
+    <string name="_11_minute_ago">%1$d minutes ago</string>
+
+    <string name="_1_hours_ago">1 hour ago</string>
+    <string name="_2_hours_ago">2 hours ago</string>
+    <string name="_3_10_hours_ago">%1$d hours ago</string>
+    <string name="_11_hours_ago">%1$d hours ago</string>
+
+    <string name="_1_days_ago">Yesterday</string>
+    <string name="_2_days_ago">2 days ago</string>
+    <string name="_3_10_days_ago">%1$d days ago</string>
+    <string name="error_happened">Sorry there is an error occurred during authentication. Please try again later.</string>
+    <string name="error_happened_2">Sorry there is an error occurred during saving. Please try again later.</string>
+    <string name="doctors">Doctors</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password"><u>Forget Password?</u></string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="sign_up_title">Sign up</string>
+    <string name="login_with">or login with</string>
+    <string name="sign">Sign Up</string>
+    <string name="confirm">Confirm</string>
+    <string name="phone">Phone</string>
+    <string name="name_ar">Name in Arabic</string>
+    <string name="name_en">Name in English</string>
+    <string name="empty_email">Enter your email</string>
+    <string name="empty_name">Enter your name</string>
+    <string name="empty_phone">Enter your phone</string>
+    <string name="invalid_email">Enter a valid email</string>
+    <string name="invalid_phone">Enter a valid phone number</string>
+    <string name="empty_birthday">Enter your birthday</string>
+    <string name="invalid_birthday">Enter a valid birthday</string>
+    <string name="email_sent_success">Email sent successfully</string>
+    <string name="empty_password">Enter your password</string>
+    <string name="invalid_password">Wrong password. Try again or click Forgot password to reset it.</string>
+    <string name="invalid_password_2">Wrong password.</string>
+    <string name="invalid_password_3">Password Confirmation doesn\'t match with password.</string>
+    <string name="message_no_internet">No data connection</string>
+    <string name="sex">Gender</string>
+    <string-array name="sex_items">
+        <item>Select your gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="birthday">Birthday</string>
+    <string name="gender_error">You must select your gender.</string>
+    <string name="specialty_error">You must select your specialty.</string>
+
+    <string name="message_email_not_found">This email isn\'t registered</string>
+    <string name="message_email_found">This email is registered before</string>
+    <string name="message_email_registered_as_user">This email is registered as a patient account</string>
+    <string name="specialty">Specialty</string>
+    <string name="empty_list">No related results available.</string>
+
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_rotate">Rotate</string>
+    <string name="ucrop_scale">Scale</string>
+    <string name="ucrop_crop">Crop</string>
+    <string name="city_error">You must select your city.</string>
+    <string name="city_selector_title">Select your city.</string>
+    <string name="city_selector_search_hint">Search in cities</string>
+    <string name="specialization_selector_title">Choose the specialty</string>
+    <string name="specialization_selector_search_hint">Search in Specialty</string>
+    <string name="doctor_list_title">Search for %s Doctors</string>
+    <string name="doctor_list_search_hint">Search in Doctors</string>
+    <string name="book_now">Book Now</string>
+    <string name="appointments">Appointments</string>
+    <string name="doctor_profile_title">Doctor Profile</string>
+    <string name="diseases_selector_title">Choose the disease</string>
+    <string name="diseases_selector_search_hint">Search in diseases</string>
+    <string name="diseases_details_title">Disease Details</string>
+    <string name="license_hint">Select or capture the Practice License ID photo</string>
+    <string name="upload">Upload</string>
+    <string name="LicenseId_title">Practice License ID Photo</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="professional_title">Professional Title</string>
+    <string name="professional_title_in_arabic">Professional Title in Arabic</string>
+    <string name="professional_title_in_english">Professional Title in English</string>
+    <string name="about_the_doctor">About the Doctor</string>
+    <string name="about_in_arabic">About in Arabic</string>
+    <string name="about_in_english">About in English</string>
+    <string name="medical_specialty">Medical Specialty</string>
+    <string name="certificate_photo">Certificate Photo</string>
+    <string name="examination">Examination</string>
+    <string name="clinic_address">Clinic Address</string>
+    <string name="data_not_found">This data doesn\'t exist anymore</string>
+    <string name="exit">Exit</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="edit_clinic">Clinic Settings</string>
+    <string name="profile_under_review">Your account is still under review for publication</string>
+    <string name="profile_blocked">Sorry you are blocked from using our services. <u>Contact us</u></string>
+    <string name="profile_deleted">Your account has been deleted. <u>Contact us</u></string>
+    <string name="save">Save</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="allow">Allow</string>
+    <string name="next">Next</string>
+    <string name="message_choose_valid_location">Choose a valid location</string>
+    <string name="message_choose_valid_location_eg">Choose a location in Egypt</string>
+    <string name="governorate">Governorate</string>
+    <string name="city">City</string>
+    <string name="street_name_en">Street Name</string>
+    <string name="street_name_ar">إسم الشارع</string>
+    <string name="floor_en">Floor</string>
+    <string name="floor_ar">الدور</string>
+    <string name="apartment_en">Apartment</string>
+    <string name="apartment_ar">الشقة</string>
+    <string name="landmark_en">Landmark</string>
+    <string name="landmark_ar">علامة مميزة</string>
+    <string name="address_en">Address</string>
+    <string name="address_ar">العنوان</string>
+    <string name="building_number_en">Building Number</string>
+    <string name="building_number_ar">رقم المبنى</string>
+    <string name="state_en">State</string>
+    <string name="state_ar">المنطقة</string>
+    <string name="message_perform_to_change_license">Contact US to change your Practice License ID Photo</string>
+    <string name="message_perform_to_change_certification">Contact US to change your Certificate Photo</string>
+    <string name="required">Required</string>
+    <string name="sat">Sat</string>
+    <string name="working_hours">Working Hours</string>
+    <string name="dil">-</string>
+    <string name="message_working_hours_error">You have overlapped shifts in your working hours. Please change your working shifts to working hours</string>
+    <string name="message_working_duration_required">Working Duration is required</string>
+    <string name="log_out">Logout</string>
+    <string-array name="examination_duration">
+        <item>Duration</item>
+        <item>15 Mins</item>
+        <item>20 Mins</item>
+        <item>30 Mins</item>
+        <item>45 Mins</item>
+        <item>60 Mins</item>
+        <item>75 Mins</item>
+        <item>90 Mins</item>
+        <item>120 Mins</item>
+    </string-array>
+
+    <string name="confirm_availability">Confirm Availability</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="home_title">Home</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="appointments_title">My Appointments</string>
+    <string name="questions_title">Questions</string>
+    <string name="profile_title">Profile</string>
+    <string name="confirm_attendance_txt">Don\'t forget to confirm your attendance this week so that patients can book appointments.   <u>Settings</u></string>
+    <string name="attendance_error">You should confirm your attendance in this day so that patients can book appointments.</string>
+    <string name="confirm_attendance_title">Confirm your Attendance</string>
+    <string name="booking_count">%1$d Booking</string>
+    <string name="dialog_confrimation_message">Are you sure you want to cancel all bookings in this day ?</string>
+    <string name="cancel"><u>Cancel</u></string>
+    <string name="check_in">Check in</string>
+    <string name="examination_canceled">Examination Canceled</string>
+    <string name="examination_done">Examination Done</string>
+    <string name="isnt_working_day">This isn\'t a working day</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="notes">Notes</string>
+    <string name="booking_saved_success">Booking saved successfully</string>
+    <string name="booking_details_title">Patient Booking Details</string>
+    <string name="new_booking_title">Add New Patient Booking</string>
+    <string name="date">Date :</string>
+    <string name="duration">Duration :</string>
+    <string name="minute">%1$d minutes</string>
+    <string name="price">%1$,.2f LE</string>
+    <string name="accept">Accept</string>
+    <string name="clinic_is_busy">Clinic is busy</string>
+    <string name="booking_accepted_by_doctor">Dr. %1$s has agreed to the date of your booking at %2$s</string>
+    <string name="booking_refused_by_doctor">Sorry! Dr. %1$s has declined your booking</string>
+    <string name="booking_canceled_by_doctor">Sorry! Your Booking has been canceled at Dr. %1$s Clinic</string>
+    <string name="user_requested_booking">%1$s asked for a new booking on %2$s</string>
+    <string name="user_canceled_booking">%1$s\'s booking has been canceled</string>
+    <string name="user_requested_question">%1$s asked for medical consultation</string>
+    <string name="doctor_answered_question">Dr. %1$s responded to your consultation</string>
+    <string name="your_answer">Your answer</string>
+    <string name="send">Send</string>
+    <string name="bookings_request">Bookings Requests</string>
+    <string name="questions_request">Questions Requests</string>
+
+
+</resources>

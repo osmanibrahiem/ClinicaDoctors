@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Booking.View.ViewBookingDetailsActivity">
+
+    <include layout="@layout/app_bar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_patient"
+                    android:layout_width="@dimen/d100"
+                    android:layout_height="@dimen/d100"
+                    android:layout_marginStart="@dimen/d20"
+                    android:layout_marginTop="@dimen/d26"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_picture_blank_square"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/patient_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d20"
+                    android:layout_marginEnd="@dimen/d20"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/font_size_xlarge"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/img_patient"
+                    app:layout_constraintTop_toTopOf="@id/img_patient" />
+
+                <TextView
+                    android:id="@+id/examination_date_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintStart_toStartOf="@id/patient_name"
+                    app:layout_constraintTop_toBottomOf="@id/patient_name" />
+
+                <TextView
+                    android:id="@+id/examination_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/search_MarginTop"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintEnd_toEndOf="@id/patient_name"
+                    app:layout_constraintStart_toEndOf="@id/examination_date_title"
+                    app:layout_constraintTop_toTopOf="@id/examination_date_title" />
+
+                <TextView
+                    android:id="@+id/examination_duration_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/duration"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintStart_toStartOf="@id/examination_date_title"
+                    app:layout_constraintTop_toBottomOf="@id/examination_date" />
+
+                <TextView
+                    android:id="@+id/examination_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/search_MarginTop"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintEnd_toEndOf="@id/patient_name"
+                    app:layout_constraintStart_toEndOf="@id/examination_duration_title"
+                    app:layout_constraintTop_toTopOf="@id/examination_duration_title" />
+
+                <TextView
+                    android:id="@+id/doctor_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/examination"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintStart_toStartOf="@id/examination_duration_title"
+                    app:layout_constraintTop_toBottomOf="@id/examination_duration" />
+
+                <TextView
+                    android:id="@+id/doctor_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/search_MarginTop"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintEnd_toEndOf="@id/patient_name"
+                    app:layout_constraintStart_toEndOf="@id/doctor_price_title"
+                    app:layout_constraintTop_toTopOf="@id/doctor_price_title" />
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:textColor="@color/text_dec"
+                    android:textSize="@dimen/font_size_xlarge"
+                    app:layout_constraintEnd_toEndOf="@id/patient_name"
+                    app:layout_constraintStart_toStartOf="@id/img_patient"
+                    app:layout_constraintTop_toBottomOf="@id/doctor_price" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/check_in_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d10"
+                    android:layout_marginEnd="@dimen/d10"
+                    android:layout_marginBottom="@dimen/d10"
+                    android:background="@drawable/gradiant_button"
+                    android:enabled="false"
+                    android:minWidth="@dimen/d4"
+                    android:minHeight="@dimen/d4"
+                    android:paddingStart="@dimen/d20"
+                    android:paddingTop="@dimen/d2"
+                    android:paddingEnd="@dimen/d20"
+                    android:paddingBottom="@dimen/d2"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/patient_name"
+                    app:layout_constraintTop_toBottomOf="@id/notes" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparent_button"
+                    android:minWidth="@dimen/d4"
+                    android:minHeight="@dimen/d4"
+                    android:paddingStart="@dimen/d20"
+                    android:paddingTop="@dimen/d2"
+                    android:paddingEnd="@dimen/d20"
+                    android:paddingBottom="@dimen/d2"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/font_size_large"
+                    app:layout_constraintBottom_toBottomOf="@id/check_in_btn"
+                    app:layout_constraintEnd_toStartOf="@id/check_in_btn"
+                    app:layout_constraintTop_toTopOf="@id/check_in_btn" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/home_menu_item_marginStartEnd"
+            android:layout_marginEnd="@dimen/home_menu_item_marginStartEnd"
+            android:background="@drawable/rectangle_message"
+            android:gravity="center"
+            android:padding="@dimen/d10"
+            android:text="@string/empty_list"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:tint="@color/white"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+</android.support.design.widget.CoordinatorLayout>

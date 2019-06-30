@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item android:drawable="@android:color/holo_blue_bright" android:state_checked="true"/>-->
+    <!--<item android:drawable="@android:color/holo_orange_light"/>-->
+<!--</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="@color/colorPrimaryDark" />
+    <item android:state_checked="false" android:color="@color/colorPrimary" />
+    <item android:color="@color/colorPrimary"  />
+</selector>

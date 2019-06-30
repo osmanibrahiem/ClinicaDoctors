@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="font_size_med">12sp</dimen>
+    <dimen name="font_size_large">14sp</dimen>
+    <dimen name="font_size_xlarge">16sp</dimen>
+    <dimen name="font_size_xxlarge">18sp</dimen>
+    <dimen name="font_size_xxxlarge">20sp</dimen>
+    <dimen name="font_size_small">10sp</dimen>
+    <dimen name="font_size_xsmall">8sp</dimen>
+
+    <dimen name="home_menu_text_size">14sp</dimen>
+    <dimen name="home_menu_item_marginTop">10dp</dimen>
+    <dimen name="home_menu_item_marginStartEnd">15dp</dimen>
+
+    <dimen name="home_logo_image_padding">45dp</dimen>
+    <dimen name="home_item_image_size">30dp</dimen>
+    <dimen name="home_item_image_margin">20dp</dimen>
+    <dimen name="home_item_text_size">13sp</dimen>
+
+    <dimen name="gallery_item_image_size">85dp</dimen>
+
+    <dimen name="action_button_padding">10dp</dimen>
+
+    <dimen name="toolbar_item_height">20dp</dimen>
+    <dimen name="toolbar_item_notification_textSize">10sp</dimen>
+
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+    <dimen name="name">15dp</dimen>
+    <dimen name="chef">12dp</dimen>
+    <dimen name="timestamp">11dp</dimen>
+    <dimen name="description">15dp</dimen>
+    <dimen name="price">13dp</dimen>
+
+    <dimen name="marker_offset_x">5dp</dimen>
+    <dimen name="marker_offset_y">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

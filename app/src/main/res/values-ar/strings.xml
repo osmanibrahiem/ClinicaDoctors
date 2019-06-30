@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinica Doctors</string>
+
+    <string name="jsut_now">الآن</string>
+    <string name="_1_minute_ago">منذ دقيقة واحدة</string>
+    <string name="_2_minute_ago">منذ دقيقتان</string>
+    <string name="_3__10_minute_ago">منذ %1$d دقائق</string>
+    <string name="_11_minute_ago">منذ %1$d دقيقة</string>
+
+    <string name="_1_hours_ago">منذ ساعة واحدة</string>
+    <string name="_2_hours_ago">منذ ساعتان</string>
+    <string name="_3_10_hours_ago">منذ %1$d ساعات</string>
+    <string name="_11_hours_ago">منذ %1$d ساعة</string>
+
+    <string name="_1_days_ago">الأمس</string>
+    <string name="_2_days_ago">منذ يومان</string>
+    <string name="_3_10_days_ago">منذ %1$d أيام</string>
+    <string name="error_happened">عذرًا ، حدث خطأ أثناء المصادقة. الرجاء معاودة المحاولة في وقت لاحق.</string>
+    <string name="error_happened_2">عذرًا ، حدث خطأ أثناء الحفظ. الرجاء معاودة المحاولة في وقت لاحق.</string>
+    <string name="doctors">Doctors</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="forget_password"><u>نسيت كلمة السر؟</u></string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="reset">استرجاع</string>
+    <string name="sign_up"><u>إنشاء حساب جديد</u></string>
+    <string name="sign_up_title">انشاء الحساب</string>
+    <string name="login_with">أو تسجيل الدخول عبر</string>
+    <string name="sign">تسجيل</string>
+    <string name="confirm">تأكيد</string>
+    <string name="phone">الهاتف المحمول</string>
+    <string name="name_ar">الإسم بالعربية</string>
+    <string name="name_en">الإسم بالانجليزية</string>
+    <string name="empty_email">ادخل بريدك الاكلتروني</string>
+    <string name="empty_name">ادخل الاسم</string>
+    <string name="empty_phone">ادخل رقم الهاتف</string>
+    <string name="invalid_email">بريد الكتروني غير صحيح</string>
+    <string name="invalid_phone">رقم هاتف غير صحيح</string>
+    <string name="empty_birthday">ادخل تاريخ الميلاد</string>
+    <string name="invalid_birthday">تاريخ الميلاد غير صحيح</string>
+    <string name="email_sent_success">تم ارسال البريد الاكتروني</string>
+    <string name="empty_password">ادخل كلمة السر</string>
+    <string name="invalid_password">كلمة مرور خاطئة. حاول مرة أخرى أو انقر فوق نسيت كلمة المرور لإعادة تعيينها.</string>
+    <string name="invalid_password_2">كلمة السر خاطئة.</string>
+    <string name="invalid_password_3">تأكيد كلمة المرور لا يتطابق مع كلمة المرور.</string>
+    <string name="message_no_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="sex">النوع</string>
+    <string-array name="sex_items">
+        <item>اختر النوع</item>
+        <item>أنثى</item>
+        <item>ذكر</item>
+    </string-array>
+    <string name="birthday">تاريخ الميلاد</string>
+    <string name="gender_error">لابد من اختيار النوع.</string>
+    <string name="specialty_error">لابد من اختيار التخصص.</string>
+
+    <string name="message_email_not_found">هذا البريد الاكتروني غير مسجل من قبل</string>
+    <string name="message_email_found">هذا البريد الاكتروني مسجل من قبل</string>
+    <string name="message_email_registered_as_user">هذا البريد الاكتروني مستخدم من قبل فى حساب مريض</string>
+    <string name="specialty">التخصص</string>
+    <string name="empty_list">لا توجد نتائج متاحة.</string>
+
+    <string name="msg_error_unable_select_profile_pic">غير قادر على تعيين صورة الملف الشخصي. حاول مرة اخرى!</string>
+    <string name="lbl_set_profile_photo">تعيين صورة الملف الشخصي</string>
+    <string name="lbl_take_camera_picture">التقط صوره</string>
+    <string name="lbl_choose_from_gallery">اختر من المعرض</string>
+    <string name="toast_image_intent_null">خيار منتقي الصور مفقود!</string>
+    <string name="dialog_permission_title">طلب الأذونات</string>
+    <string name="dialog_permission_message">يحتاج هذا التطبيق إلى إذن لاستخدام هذه الميزة. يمكنك منحهم في إعدادات التطبيق.</string>
+    <string name="go_to_settings">الإعدادات</string>
+    <string name="ucrop_label_original">أصلي</string>
+    <string name="ucrop_label_edit_photo">تعديل الصورة</string>
+    <string name="ucrop_menu_crop">اقتصاص</string>
+    <string name="ucrop_rotate">دوران</string>
+    <string name="ucrop_scale">تكبيير / تصغيير</string>
+    <string name="ucrop_crop">اقتصاص</string>
+    <string name="city_error">يجب عليك اختيار مدينتك.</string>
+    <string name="city_selector_title">اختيار المدينة.</string>
+    <string name="city_selector_search_hint">البحث فى المدن</string>
+    <string name="specialization_selector_title">اختيار التخصص</string>
+    <string name="specialization_selector_search_hint">البحث فى التخصصات</string>
+    <string name="doctor_list_title">البحث عن اطباء %s </string>
+    <string name="doctor_list_search_hint">الحث فى الاطباء</string>
+    <string name="book_now">احجز الآن</string>
+    <string name="appointments">المواعيد</string>
+    <string name="doctor_profile_title">الملف الشخصي</string>
+    <string name="diseases_selector_title">البحث عن المرض</string>
+    <string name="diseases_selector_search_hint">البحث فى الامراض</string>
+    <string name="diseases_details_title">تفاصيل المرض</string>
+    <string name="license_hint">التقط او اختر من المعرض صورة مزاولة المهنة</string>
+    <string name="upload">تحمييل</string>
+    <string name="LicenseId_title">صورة مزاولة المهنة</string>
+    <string name="basic_information">المعلومات الأساسية</string>
+    <string name="professional_title">اللقب المهني</string>
+    <string name="professional_title_in_arabic">اللقب المهني بالعربية</string>
+    <string name="professional_title_in_english">اللقب المهني بالإنجليزية</string>
+    <string name="about_the_doctor">نبذة عن الطبيب</string>
+    <string name="about_in_arabic">نبذة عن الطبيب بالعربية</string>
+    <string name="about_in_english">نبذة عن الطبيب بالإنجليزية</string>
+    <string name="medical_specialty">التحصص الطبي</string>
+    <string name="certificate_photo">صورة الشهادة</string>
+    <string name="examination">الكشف</string>
+    <string name="clinic_address">عنوان العيادة</string>
+    <string name="data_not_found">هذه البيانات غير موجودة الآن</string>
+    <string name="exit">خروج</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="edit_clinic">اعدادات حساب العيادة</string>
+    <string name="profile_under_review">حسابك لا يزال قيد المراجعة للنشر</string>
+    <string name="profile_blocked">عذراَ لأنك ممنوع من استخدام خدماتنا. <u>تواصل معنا</u></string>
+    <string name="profile_deleted">لقد تم حذف حسابك. <u>تواصل معنا</u></string>
+    <string name="save">حفظ</string>
+    <string name="open_settings">فتح الإعدادات</string>
+    <string name="allow">سماح</string>
+    <string name="next">التالي</string>
+    <string name="message_choose_valid_location">تأكد من اختيار موقع صحيح</string>
+    <string name="message_choose_valid_location_eg">تأكد من اختيار موقع فى مصر</string>
+    <string name="governorate">المحافظة</string>
+    <string name="city">المدينة</string>
+    <string name="street_name_en">Street Name</string>
+    <string name="street_name_ar">إسم الشارع</string>
+    <string name="floor_en">Floor</string>
+    <string name="floor_ar">الدور</string>
+    <string name="apartment_en">Apartment</string>
+    <string name="apartment_ar">الشقة</string>
+    <string name="landmark_en">Landmark</string>
+    <string name="landmark_ar">علامة مميزة</string>
+    <string name="address_en">Address</string>
+    <string name="address_ar">العنوان</string>
+    <string name="building_number_en">Building Number</string>
+    <string name="building_number_ar">رقم المبنى</string>
+    <string name="state_en">State</string>
+    <string name="state_ar">المنطقة</string>
+    <string name="message_perform_to_change_license">اتصل بنا لتغيير صورة مزاولة المهنة الخاصة بك</string>
+    <string name="message_perform_to_change_certification">اتصل بنا لتغيير صورة الشهادة الخاصة بك</string>
+    <string name="required">مطلوب</string>
+    <string name="sat">السبت</string>
+    <string name="working_hours">ساعات العمل</string>
+    <string name="dil">-</string>
+    <string name="message_working_hours_error">لديك تداخلات في ساعات العمل الخاصة بك. يرجى تغييرها إلى ساعات العمل</string>
+    <string name="message_working_duration_required">مدة الكشف مطلوبة</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string-array name="examination_duration">
+        <item>مدة الكشف</item>
+        <item>15 دقيقة</item>
+        <item>20 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>45 دقيقة</item>
+        <item>60 دقيقة</item>
+        <item>75 دقيقة</item>
+        <item>90 دقيقة</item>
+        <item>120 دقيقة</item>
+    </string-array>
+
+    <string name="confirm_availability">تأكييد الحضور</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غداَ</string>
+    <string name="home_title">الرئيسية</string>
+    <string name="notifications_title">الإشعارات</string>
+    <string name="appointments_title">مواعيدي</string>
+    <string name="questions_title">الإسئلة</string>
+    <string name="profile_title">الحساب</string>
+    <string name="confirm_attendance_txt">لا تنسَ تأكيد حضورك هذا الأسبوع حتى يتمكن المرضى من حجز المواعيد.   <u>الاعدادات</u></string>
+    <string name="attendance_error">يجب عليك تأكيد حضورك في هذا اليوم حتى يتمكن المرضى من حجز المواعيد.</string>
+    <string name="confirm_attendance_title">تأكييد الحضور</string>
+    <string name="booking_count">%1$d حجز</string>
+    <string name="dialog_confrimation_message">هل تريد بالتأكيد إلغاء جميع الحجوزات في هذا اليوم؟</string>
+    <string name="cancel"><u>إلغاء الحجز</u></string>
+    <string name="check_in">وصل العيادة</string>
+    <string name="examination_canceled">تم إلغاء الحجز</string>
+    <string name="examination_done">تم الكشف</string>
+    <string name="isnt_working_day">هذا ليس يوم عمل</string>
+    <string name="patient_name">إسم المريض</string>
+    <string name="notes">ملاحظات</string>
+    <string name="booking_saved_success">تم اضافة الحجز بنجاح</string>
+    <string name="booking_details_title">تفاصيل الحجز</string>
+    <string name="new_booking_title">اضافة حجز جديد</string>
+    <string name="date">موعد الكشف :</string>
+    <string name="duration">المدة :</string>
+    <string name="minute">%1$d دقيقة</string>
+    <string name="price">%1$,.2f جنية</string>
+    <string name="accept">قبول</string>
+    <string name="clinic_is_busy">العيادة مشغولة</string>
+    <string name="booking_accepted_by_doctor">لقد وافق الدكتور. %1$s على موعد الحجز الخاص بك في %2$s</string>
+    <string name="booking_refused_by_doctor">عفواً! لقد رفض الدكتور. %1$s موعد الحجز الخاص بك</string>
+    <string name="booking_canceled_by_doctor">عفواً! لقد تم إلغاء موعد الحجز الخاص بك فى عيادة الدكتور. %1$s</string>
+    <string name="user_requested_booking">لقد طلب %1$s موعد حجز جديد يوم %2$s</string>
+    <string name="user_canceled_booking">لقد تم إلغاء موعد الحجز الخاص ب%1$s</string>
+    <string name="user_requested_question">لقد طلب %1$s استشارة طبية</string>
+    <string name="doctor_answered_question">لقد أجاب الدكتور. %1$s على استشارتك</string>
+    <string name="your_answer">اجابتك</string>
+    <string name="send">ارسال</string>
+    <string name="bookings_request">طلبات الحجز</string>
+    <string name="questions_request">طلبات الأسئلة</string>
+
+</resources>

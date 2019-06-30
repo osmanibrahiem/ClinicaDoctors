@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008daa</color>
+    <color name="colorPrimaryDark">#005c7b</color>
+    <color name="colorAccent">#005c7b</color>
+    <color name="colorAccent_profile">#838282</color>
+    <color name="btn_disabled">#838282</color>
+    <color name="colorAccent_auth">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#8dffffff</color>
+    <color name="item_pressed">#14ededed</color>
+    <color name="transparent_normal">#00000000</color>
+    <color name="transparent_pressed">#43EDEDED</color>
+    <color name="btn_normal">#06bac5</color>
+    <color name="btn_pressed">#067279</color>
+    <color name="loginHintText">#C1C1C1</color>
+    <color name="facebook">#3C5A99</color>
+    <color name="facebook_pressed">#25375C</color>
+    <color name="search_border">#F2F2F2</color>
+    <color name="ucrop_color_widget_rotate_mid_line">@color/colorPrimaryDark</color>
+    <color name="ucrop_color_widget_background">@color/colorPrimaryDark</color>
+    <color name="home_category_border">#EEEEEE</color>
+    <color name="home_news_border">#dddddd</color>
+    <color name="text_dec">#3e3e3e</color>
+    <color name="appointment_disable">#AF2323</color>
+</resources>

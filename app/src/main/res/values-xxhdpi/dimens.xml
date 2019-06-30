@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="badge_count_textsize">12sp</dimen>
+    <dimen name="search_drawable_padding">8dp</dimen>
+    <dimen name="search_MarginStartEnd">15dp</dimen>
+    <dimen name="search_bar_height">28dp</dimen>
+    <dimen name="search_MarginTop">8dp</dimen>
+    <dimen name="search_corners_radius">18dp</dimen>
+    <dimen name="title_text_size">17sp</dimen>
+    <dimen name="list_item_radius">40dip</dimen>
+
+    <dimen name="home_menu_text_size">15sp</dimen>
+    <dimen name="home_menu_item_marginTop">9.8dp</dimen>
+    <dimen name="home_menu_item_marginStartEnd">15dp</dimen>
+
+    <dimen name="home_logo_image_padding">45dp</dimen>
+    <dimen name="home_item_image_size">30dp</dimen>
+    <dimen name="home_item_image_margin">20dp</dimen>
+    <dimen name="home_item_text_size">11sp</dimen>
+    <dimen name="toolbar_item_height">20dp</dimen>
+    <dimen name="toolbar_item_notification_textSize">10sp</dimen>
+    <dimen name="gallery_item_image_size">65dp</dimen>
+
+</resources>
